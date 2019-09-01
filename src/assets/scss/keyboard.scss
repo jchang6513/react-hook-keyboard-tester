@@ -1,26 +1,26 @@
-$unit: 30px;
-
-@function unit-width($units) {
-  @return $unit * $units;
-}
-
-.keyboard {
+#keyboard {
   .row {
     display: flex;
-  }
-  .keycap {
-    border: 1px solid gray;
-    height: $unit;
-    line-height: $unit;
-    margin: 10px;
-    padding: 10px;
 
-    &.key-125u {
-      width: unit-width(1.25);
-    }
+    .keycap {
+      overflow: hidden;
+      position: relative;
 
-    &.key-625u {
-      width: unit-width(6.25);
+      &:after {
+        border: 1px solid gray;
+        content: '';
+        height: calc(100% - 12px);
+        left: 5px;
+        position: absolute;
+        top: 5px;
+        width: calc(100% - 12px);
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0px;
+        margin-top: 8px;
+      }
     }
   }
 }
