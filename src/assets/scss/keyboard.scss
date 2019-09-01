@@ -1,0 +1,26 @@
+$unit: 30px;
+
+@function unit-width($units) {
+  @return $unit * $units;
+}
+
+.keyboard {
+  .row {
+    display: flex;
+  }
+  .keycap {
+    border: 1px solid gray;
+    height: $unit;
+    line-height: $unit;
+    margin: 10px;
+    padding: 10px;
+
+    &.key-125u {
+      width: unit-width(1.25);
+    }
+
+    &.key-625u {
+      width: unit-width(6.25);
+    }
+  }
+}
