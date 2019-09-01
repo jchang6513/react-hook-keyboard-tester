@@ -2,24 +2,22 @@
   .row {
     display: flex;
 
-    .keycap {
+    .key {
       overflow: hidden;
       position: relative;
 
-      &:after {
+      .keyCap {
         border: 1px solid gray;
+        border-radius: 5px;
         content: '';
-        height: calc(100% - 12px);
-        left: 5px;
+        height: calc(100% - 16px);
+        padding-top: 4px;
         position: absolute;
-        top: 5px;
         width: calc(100% - 12px);
-      }
-
-      p {
-        font-size: 14px;
-        margin: 0px;
-        margin-top: 8px;
+        p {
+          font-size: 14px;
+          margin: 0px;
+        }
       }
     }
   }

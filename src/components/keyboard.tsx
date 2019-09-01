@@ -19,7 +19,6 @@ const Keyboard = () => {
 
   useEffect(() => {
     (document.getElementById('keyboard') as any).style.width = `calc(${maxKeyWidth} * ${unit})`
-    console.log(maxKeyWidth);
   }, [maxKeyWidth]);
 
   return (
@@ -29,7 +28,6 @@ const Keyboard = () => {
           if ( maxKeyWidth < currentRowWidth) {
             maxKeyWidth = currentRowWidth;
           }
-          nextKeyWidth = 1;
           currentRowWidth = 0;
           return (
             <div className="row" style={{height: unit}}>
@@ -39,32 +37,20 @@ const Keyboard = () => {
                   const keyHeight = nextKeyHeight
                   nextKeyWidth = 1;
                   nextKeyHeight = 1;
-                  console.log(key, keyWidth, keyHeight)
                   if (typeof key === 'object') {
-                    if (key.w) {
-                      nextKeyWidth = key.w
-                    }
-                    if (key.h) {
-                      nextKeyHeight = key.h
-                    }
+                    if (key.w) { nextKeyWidth = key.w }
+                    if (key.h) { nextKeyHeight = key.h }
                     if (key.x) {
                       currentRowWidth += key.x;
-                      return (
-                        <div className="key-space" style={{height: unit, width: unitWidth(key.x)}} />
-                      )
+                      return <div className="key-space" style={{height: unit, width: unitWidth(key.x)}} />
                     }
                   } else {
                     currentRowWidth += keyWidth;
                     return (
-                      <div className="keycap" style={{height: unitWidth(keyHeight), width: unitWidth(keyWidth)}}>
-                        {
-                          key.split('\n').map(k => (
-                            <p>
-                              {k}
-                              <br/>
-                            </p>
-                          ))
-                        }
+                      <div className="key" style={{height: unitWidth(keyHeight), width: unitWidth(keyWidth)}}>
+                        <div className="keyCap">
+                          { key.split('\n').map(k => <p>{k}<br/></p>) }
+                        </div>
                       </div>
                     )
                   }
