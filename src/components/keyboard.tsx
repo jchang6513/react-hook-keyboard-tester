@@ -1,13 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/scss/keyboard.scss';
 
 import ansi104 from '../assets/layout/ANSI104.json';
 
-type TKey = string | {[key: string]: number};
+type TKey = string | {
+  w?: number;
+  h?: number;
+  x?: number;
+  y?: number;
+  legend?: string;
+  keyCode?: string;
+};
 type KeyRow = TKey[];
 type KeyMap = KeyRow[];
 
-const Keyboard = () => {
+type KeyboardProps = {
+  pressedKeys: string[];
+}
+const Keyboard = (props: KeyboardProps) => {
+  const { pressedKeys } = props;
   const keyMap: KeyMap = ansi104;
   const unit = '60px';
   const unitWidth = (value: number) => `calc(${value} * ${unit})`;
@@ -38,11 +49,29 @@ const Keyboard = () => {
                   nextKeyWidth = 1;
                   nextKeyHeight = 1;
                   if (typeof key === 'object') {
-                    if (key.w) { nextKeyWidth = key.w }
-                    if (key.h) { nextKeyHeight = key.h }
-                    if (key.x) {
-                      currentRowWidth += key.x;
-                      return <div className="key-space" style={{height: unit, width: unitWidth(key.x)}} />
+                    const {
+                      w, h, x, y, legend, keyCode
+                    } = key;
+                    if (w) { nextKeyWidth = w }
+                    if (h) { nextKeyHeight = h }
+                    if (x) {
+                      currentRowWidth += x;
+                      return <div className="key-space" style={{height: unit, width: unitWidth(x)}} />
+                    }
+                    if (legend && keyCode) {
+                      return (
+                        <div
+                          className={`key ${keyCode} ${pressedKeys.includes(keyCode) && 'pressed'}`}
+                          style={{
+                            height: unitWidth(nextKeyHeight),
+                            width: unitWidth(nextKeyWidth)
+                          }}
+                        >
+                          <div className="keyCap">
+                            { legend.split('\n').map(k => <p>{k}<br/></p>) }
+                          </div>
+                        </div>
+                      )
                     }
                   } else {
                     currentRowWidth += keyWidth;
