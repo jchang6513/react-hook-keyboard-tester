@@ -7,24 +7,60 @@
     {
       "x": 1
     },
-    "F1",
-    "F2",
-    "F3",
-    "F4",
+    {
+      "legend": "F1",
+      "keyCode": "F1"
+    },
+    {
+      "legend": "F2",
+      "keyCode": "F2"
+    },
+    {
+      "legend": "F3",
+      "keyCode": "F3"
+    },
+    {
+      "legend": "F4",
+      "keyCode": "F4"
+    },
     {
       "x": 0.5
     },
-    "F5",
-    "F6",
-    "F7",
-    "F8",
+    {
+      "legend": "F5",
+      "keyCode": "F5"
+    },
+    {
+      "legend": "F6",
+      "keyCode": "F6"
+    },
+    {
+      "legend": "F7",
+      "keyCode": "F7"
+    },
+    {
+      "legend": "F8",
+      "keyCode": "F8"
+    },
     {
       "x": 0.5
     },
-    "F9",
-    "F10",
-    "F11",
-    "F12",
+    {
+      "legend": "F9",
+      "keyCode": "F9"
+    },
+    {
+      "legend": "F10",
+      "keyCode": "F10"
+    },
+    {
+      "legend": "F11",
+      "keyCode": "F11"
+    },
+    {
+      "legend": "F12",
+      "keyCode": "F12"
+    },
     {
       "x": 0.25
     },
@@ -140,15 +176,42 @@
       "w": 1.75
     },
     "Caps Lock",
-    "A",
-    "S",
-    "D",
-    "F",
-    "G",
-    "H",
-    "J",
-    "K",
-    "L",
+    {
+      "legend": "A",
+      "keyCode": "KeyA"
+    },
+    {
+      "legend": "S",
+      "keyCode": "KeyS"
+    },
+    {
+      "legend": "D",
+      "keyCode": "KeyD"
+    },
+    {
+      "legend": "F",
+      "keyCode": "KeyF"
+    },
+    {
+      "legend": "G",
+      "keyCode": "KeyG"
+    },
+    {
+      "legend": "H",
+      "keyCode": "KeyH"
+    },
+    {
+      "legend": "J",
+      "keyCode": "KeyJ"
+    },
+    {
+      "legend": "K",
+      "keyCode": "KeyK"
+    },
+    {
+      "legend": "L",
+      "keyCode": "KeyL"
+    },
     ":\n;",
     "\"\n'",
     {
@@ -167,13 +230,34 @@
       "w": 2.25
     },
     "Shift",
-    "Z",
-    "X",
-    "C",
-    "V",
-    "B",
-    "N",
-    "M",
+    {
+      "legend": "Z",
+      "keyCode": "KeyZ"
+    },
+    {
+      "legend": "X",
+      "keyCode": "KeyX"
+    },
+    {
+      "legend": "C",
+      "keyCode": "KeyC"
+    },
+    {
+      "legend": "V",
+      "keyCode": "KeyV"
+    },
+    {
+      "legend": "B",
+      "keyCode": "KeyB"
+    },
+    {
+      "legend": "N",
+      "keyCode": "KeyN"
+    },
+    {
+      "legend": "M",
+      "keyCode": "KeyM"
+    },
     "<\n,",
     ">\n.",
     "?\n/",

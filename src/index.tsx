@@ -8,6 +8,7 @@ const App = () => {
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);
   const pushPressedKeys = (keyCode: string) => {
     if (!pressedKeys.includes(keyCode)) {
+      console.log(keyCode)
       setPressedKeys([...pressedKeys, keyCode]);
     }
   }
