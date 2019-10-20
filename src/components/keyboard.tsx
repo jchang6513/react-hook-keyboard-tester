@@ -15,10 +15,14 @@ type KeyRow = TKey[];
 type KeyMap = KeyRow[];
 
 type KeyboardProps = {
+  keyPressing: string;
   pressedKeys: string[];
 }
 const Keyboard = (props: KeyboardProps) => {
-  const { pressedKeys } = props;
+  const {
+    keyPressing,
+    pressedKeys
+  } = props;
   const keyMap: KeyMap = ansi104;
   const unit = '60px';
   const unitWidth = (value: number) => `calc(${value} * ${unit})`;
@@ -56,7 +60,7 @@ const Keyboard = (props: KeyboardProps) => {
                     currentRowWidth += keyWidth;
                     return (
                       <div
-                        className={`key ${keyCode} ${pressedKeys.includes(keyCode) && 'pressed'}`}
+                        className={`key ${keyCode} ${pressedKeys.includes(keyCode) && 'pressed'} ${keyPressing === keyCode && 'pressing'}`}
                         style={{
                           height: unitWidth(keyHeight),
                           width: unitWidth(keyWidth)

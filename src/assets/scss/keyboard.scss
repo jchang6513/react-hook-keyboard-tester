@@ -1,5 +1,5 @@
 #keyboard {
-  background-color: rgb(196, 196, 196);
+  background-color: #e3e3e3;
   border-radius: 10px;
   padding: 20px;
   padding-top: 50px;
@@ -15,7 +15,8 @@
         background-color: #f8f8f8;
         border: 1px solid gray;
         border-radius: 5px;
-        box-shadow: 0 2px 2px #c3c3c3, 0 2px 2px #c9c9c9, 0 2px 3px #333;
+        // box-shadow: 0 2px 2px #c3c3c3, 0 2px 2px #c9c9c9, 0 2px 3px #333;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
         content: '';
         height: calc(100% - 16px);
         padding-top: 4px;
@@ -29,7 +30,15 @@
 
       &.pressed {
         .keyCap {
-          background-color: #b4e3ff;
+          background-color: rgb(172, 172, 172);
+        }
+      }
+
+      &.pressing {
+        .keyCap {
+          box-shadow: none;
+          background-color: rgb(172, 172, 172);
+          transform: scale(0.99);
         }
       }
     }

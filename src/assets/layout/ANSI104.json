@@ -419,22 +419,22 @@
     {
       "w": 1.25,
       "legend": "Ctrl",
-      "keyCode": "CtrlRight"
+      "keyCode": "ControlLeft"
     },
     {
       "w": 1.25,
       "legend": "Win",
-      "keyCode": "MetaRight"
+      "keyCode": "MetaLeft"
     },
     {
       "w": 1.25,
       "legend": "Alt",
-      "keyCode": "Alt"
+      "keyCode": "AltLeft"
     },
     {
       "w": 6.25,
       "legend": " ",
-      "keyCode": " "
+      "keyCode": "Space"
     },
     {
       "w": 1.25,
@@ -454,7 +454,7 @@
     {
       "w": 1.25,
       "legend": "Ctrl",
-      "keyCode": "CtrlRight"
+      "keyCode": "ControlRight"
     },
     {
       "x": 0.25
