@@ -5,20 +5,27 @@ import "./assets/scss/style.scss";
 import Keyboard from "./components/keyboard";
 
 const App = () => {
+  const [pressedKey, setPressedKey] = useState<string>();
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);
-  const pushPressedKeys = (keyCode: string) => {
-    if (!pressedKeys.includes(keyCode)) {
-      console.log(keyCode)
-      setPressedKeys([...pressedKeys, keyCode]);
+  const pushPressedKeys = (e: KeyboardEvent) => {
+    const { code } = e;
+    setPressedKey(code);
+    if (!pressedKeys.includes(code)) {
+      setPressedKeys([...pressedKeys, code]);
     }
   }
+
+  useEffect(() => {
+    document.addEventListener('keydown', pushPressedKeys);
+    return () => document.removeEventListener('keydown', pushPressedKeys);
+  }, [pressedKeys.length]);
 
   return (
     <div className="App">
       <h1>Keyboard tester</h1>
       <h3>
         輸入文字：
-        <input type="text" onKeyDown={e => pushPressedKeys(e.nativeEvent.code)}/>
+        <input type="text" value={pressedKey}/>
       </h3>
       <Keyboard
         pressedKeys={pressedKeys}

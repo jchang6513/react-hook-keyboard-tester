@@ -23,8 +23,6 @@ const Keyboard = (props: KeyboardProps) => {
   const unit = '60px';
   const unitWidth = (value: number) => `calc(${value} * ${unit})`;
 
-  let keyWidth = 1;
-  let keyHeight = 1;
   let maxKeyWidth = 0;
   let currentRowWidth = 0;
 

@@ -80,7 +80,7 @@
   [
     {
       "legend": "~\n`",
-      "keyCode": "~\n`"
+      "keyCode": "Backquote"
     },
     {
       "legend": "!\n1",
@@ -340,7 +340,7 @@
     {
       "w": 2.25,
       "legend": "Shift",
-      "keyCode": "LeftShift"
+      "keyCode": "ShiftLeft"
     },
     {
       "legend": "Z",
@@ -385,7 +385,7 @@
     {
       "w": 2.75,
       "legend": "Shift",
-      "keyCode": "RightShift"
+      "keyCode": "ShiftRight"
     },
     {
       "x": 1.25
