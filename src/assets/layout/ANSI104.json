@@ -64,15 +64,24 @@
     {
       "x": 0.25
     },
-    "PrtSc",
-    "Scroll Lock",
-    "Pause\nBreak"
+    {
+      "legend": "PrtSc",
+      "keyCode": "PrtSc"
+    },
+    {
+      "legend": "Scroll Lock",
+      "keyCode": "Scroll Lock"
+    },
+    {
+      "legend": "Pause\nBreak",
+      "keyCode": "Pause\nBreak"
+    }
   ],
   [
     {
-      "y": 0.5
+      "legend": "~\n`",
+      "keyCode": "~\n`"
     },
-    "~\n`",
     {
       "legend": "!\n1",
       "keyCode": "Digit1"
@@ -113,69 +122,155 @@
       "legend": ")\n0",
       "keyCode": "Digit0"
     },
-    "_\n-",
-    "+\n=",
     {
-      "w": 2
+      "legend": "_\n-",
+      "keyCode": "Minus"
     },
-    "Backspace",
+    {
+      "legend": "+\n=",
+      "keyCode": "Equal"
+    },
+    {
+      "w": 2,
+      "legend": "Backspace",
+      "keyCode": "Backspace"
+    },
     {
       "x": 0.25
     },
-    "Insert",
-    "Home",
-    "PgUp",
+    {
+      "legend": "Insert",
+      "keyCode": "Insert"
+    },
+    {
+      "legend": "Home",
+      "keyCode": "Home"
+    },
+    {
+      "legend": "PgUp",
+      "keyCode": "PageUp"
+    },
     {
       "x": 0.25
     },
-    "Num Lock",
-    "/",
-    "*",
-    "-"
+    {
+      "legend": "Num Lock",
+      "keyCode": "Num Lock"
+    },
+    {
+      "legend": "/",
+      "keyCode": "/"
+    },
+    {
+      "legend": "*",
+      "keyCode": "*"
+    },
+    {
+      "legend": "-",
+      "keyCode": "-"
+    }
   ],
   [
     {
-      "w": 1.5
+      "w": 1.5,
+      "legend": "Tab",
+      "keyCode": "Tab"
     },
-    "Tab",
-    "Q",
-    "W",
-    "E",
-    "R",
-    "T",
-    "Y",
-    "U",
-    "I",
-    "O",
-    "P",
-    "{\n[",
-    "}\n]",
     {
-      "w": 1.5
+      "legend": "Q",
+      "keyCode": "KeyQ"
     },
-    "|\n\\",
+    {
+      "legend": "W",
+      "keyCode": "KeyW"
+    },
+    {
+      "legend": "E",
+      "keyCode": "KeyE"
+    },
+    {
+      "legend": "R",
+      "keyCode": "KeyR"
+    },
+    {
+      "legend": "T",
+      "keyCode": "KeyT"
+    },
+    {
+      "legend": "Y",
+      "keyCode": "KeyY"
+    },
+    {
+      "legend": "U",
+      "keyCode": "KeyU"
+    },
+    {
+      "legend": "I",
+      "keyCode": "KeyI"
+    },
+    {
+      "legend": "O",
+      "keyCode": "KeyO"
+    },
+    {
+      "legend": "P",
+      "keyCode": "KeyP"
+    },
+    {
+      "legend": "{\n[",
+      "keyCode": "{\n["
+    },
+    {
+      "legend": "}\n]",
+      "keyCode": "}\n]"
+    },
+    {
+      "w": 1.5,
+      "legend": "|\n\\",
+      "keyCode": "|\n\\"
+    },
     {
       "x": 0.25
     },
-    "Delete",
-    "End",
-    "PgDn",
+    {
+      "legend": "Delete",
+      "keyCode": "Delete"
+    },
+    {
+      "legend": "End",
+      "keyCode": "End"
+    },
+    {
+      "legend": "PgDn",
+      "keyCode": "PageDn"
+    },
     {
       "x": 0.25
     },
-    "7\nHome",
-    "8\n↑",
-    "9\nPgUp",
     {
-      "h": 2
+      "legend": "7\nHome",
+      "keyCode": "7\nHome"
     },
-    "+"
+    {
+      "legend": "8\n↑",
+      "keyCode": "8\n↑"
+    },
+    {
+      "legend": "9\nPgUp",
+      "keyCode": "9\nPgUp"
+    },
+    {
+      "h": 2,
+      "legend": "+",
+      "keyCode": "+"
+    }
   ],
   [
     {
-      "w": 1.75
+      "w": 1.75,
+      "legend": "Caps Lock",
+      "keyCode": "CapsLock"
     },
-    "Caps Lock",
     {
       "legend": "A",
       "keyCode": "KeyA"
@@ -212,24 +307,41 @@
       "legend": "L",
       "keyCode": "KeyL"
     },
-    ":\n;",
-    "\"\n'",
     {
-      "w": 2.25
+      "legend": ":\n;",
+      "keyCode": ":\n;"
     },
-    "Enter",
+    {
+      "legend": "\"\n'",
+      "keyCode": "\"\n'"
+    },
+    {
+      "w": 2.25,
+      "legend": "Enter",
+      "keyCode": "Enter"
+    },
     {
       "x": 3.5
     },
-    "4\n←",
-    "5",
-    "6\n→"
+    {
+      "legend": "4\n←",
+      "keyCode": "4\n←"
+    },
+    {
+      "legend": "5",
+      "keyCode": "5"
+    },
+    {
+      "legend": "6\n→",
+      "keyCode": "6\n→"
+    }
   ],
   [
     {
-      "w": 2.25
+      "w": 2.25,
+      "legend": "Shift",
+      "keyCode": "LeftShift"
     },
-    "Shift",
     {
       "legend": "Z",
       "keyCode": "KeyZ"
@@ -258,74 +370,118 @@
       "legend": "M",
       "keyCode": "KeyM"
     },
-    "<\n,",
-    ">\n.",
-    "?\n/",
     {
-      "w": 2.75
+      "legend": "<\n,",
+      "keyCode": "<\n,"
     },
-    "Shift",
+    {
+      "legend": ">\n.",
+      "keyCode": ">\n."
+    },
+    {
+      "legend": "?\n/",
+      "keyCode": "?\n/"
+    },
+    {
+      "w": 2.75,
+      "legend": "Shift",
+      "keyCode": "RightShift"
+    },
     {
       "x": 1.25
     },
-    "↑",
+    {
+      "legend": "↑",
+      "keyCode": "↑"
+    },
     {
       "x": 1.25
     },
-    "1\nEnd",
-    "2\n↓",
-    "3\nPgDn",
     {
-      "h": 2
+      "legend": "1\nEnd",
+      "keyCode": "1\nEnd"
     },
-    "Enter"
+    {
+      "legend": "2\n↓",
+      "keyCode": "2\n↓"
+    },
+    {
+      "legend": "3\nPgDn",
+      "keyCode": "3\nPgDn"
+    },
+    {
+      "h": 2,
+      "legend": "Enter",
+      "keyCode": "Enter"
+    }
   ],
   [
     {
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Ctrl",
+      "keyCode": "CtrlRight"
     },
-    "Ctrl",
     {
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Win",
+      "keyCode": "MetaRight"
     },
-    "Win",
     {
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Alt",
+      "keyCode": "Alt"
     },
-    "Alt",
     {
-      "a": 7,
-      "w": 6.25
+      "w": 6.25,
+      "legend": " ",
+      "keyCode": " "
     },
-    "",
     {
-      "a": 4,
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Alt",
+      "keyCode": "Alt"
     },
-    "Alt",
     {
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Win",
+      "keyCode": "MetaRight"
     },
-    "Win",
     {
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Menu",
+      "keyCode": "MenuRight"
     },
-    "Menu",
     {
-      "w": 1.25
+      "w": 1.25,
+      "legend": "Ctrl",
+      "keyCode": "CtrlRight"
     },
-    "Ctrl",
     {
       "x": 0.25
     },
-    "←",
-    "↓",
-    "→",
     {
-      "x": 0.25,
-      "w": 2
+      "legend": "←",
+      "keyCode": "ArrowLeft"
     },
-    "0\nIns",
-    ".\nDel"
+    {
+      "legend": "↓",
+      "keyCode": "ArrowDown"
+    },
+    {
+      "legend": "→",
+      "keyCode": "ArrowRight"
+    },
+    {
+      "x": 0.25
+    },
+    {
+      "w": 2,
+      "legend": "0\nIns",
+      "keyCode": "0\nIns"
+    },
+    {
+      "legend": ".\nDel",
+      "keyCode": ".\nDel"
+    }
   ]
 ]
