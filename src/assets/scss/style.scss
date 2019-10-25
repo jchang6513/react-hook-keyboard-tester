@@ -1,4 +1,15 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  .row {
+    display: flex;
+  }
+  h2 {
+    span {
+      background: black;
+      color: white;
+      margin-left: 5px;
+      padding: 0px 10px;
+    }
+  }
 }

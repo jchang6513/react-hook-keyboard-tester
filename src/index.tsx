@@ -10,8 +10,8 @@ const App = () => {
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);
 
   const pushPressedKeys = (e: KeyboardEvent) => {
-    const { code } = e;
-    setKeyPress(code);
+    const { code, key } = e;
+    setKeyPress(key);
     if (!pressedKeys.includes(code)) {
       setPressedKeys([...pressedKeys, code]);
     }
@@ -34,10 +34,9 @@ const App = () => {
   return (
     <div className="App">
       <h1>Keyboard tester</h1>
-      <h3>
-        輸入文字：
-        <input type="text" value={keyPress}/>
-      </h3>
+      <h2>
+        Last key pressed: <span>{keyPress}</span>
+      </h2>
       <Keyboard
         keyPressing={keyPressing}
         pressedKeys={pressedKeys}
