@@ -6,10 +6,12 @@ import Keyboard from "./components/keyboard";
 
 const App = () => {
   const [keyPressing, setKeyPressing] = useState<string>('');
+  const [keyPress, setKeyPress] = useState<string>('');
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);
 
   const pushPressedKeys = (e: KeyboardEvent) => {
     const { code } = e;
+    setKeyPress(code);
     if (!pressedKeys.includes(code)) {
       setPressedKeys([...pressedKeys, code]);
     }
@@ -34,7 +36,7 @@ const App = () => {
       <h1>Keyboard tester</h1>
       <h3>
         輸入文字：
-        <input type="text" value={keyPressing}/>
+        <input type="text" value={keyPress}/>
       </h3>
       <Keyboard
         keyPressing={keyPressing}

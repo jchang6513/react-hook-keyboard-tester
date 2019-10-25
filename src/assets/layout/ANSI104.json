@@ -218,16 +218,16 @@
     },
     {
       "legend": "{\n[",
-      "keyCode": "{\n["
+      "keyCode": "BracketLeft"
     },
     {
       "legend": "}\n]",
-      "keyCode": "}\n]"
+      "keyCode": "BracketRight"
     },
     {
       "w": 1.5,
       "legend": "|\n\\",
-      "keyCode": "|\n\\"
+      "keyCode": "Backslash"
     },
     {
       "x": 0.25
@@ -242,7 +242,7 @@
     },
     {
       "legend": "PgDn",
-      "keyCode": "PageDn"
+      "keyCode": "PageDown"
     },
     {
       "x": 0.25
@@ -253,7 +253,7 @@
     },
     {
       "legend": "8\n↑",
-      "keyCode": "8\n↑"
+      "keyCode": "Up"
     },
     {
       "legend": "9\nPgUp",
@@ -309,11 +309,11 @@
     },
     {
       "legend": ":\n;",
-      "keyCode": ":\n;"
+      "keyCode": "Semicolon"
     },
     {
       "legend": "\"\n'",
-      "keyCode": "\"\n'"
+      "keyCode": "Quote"
     },
     {
       "w": 2.25,
@@ -372,15 +372,15 @@
     },
     {
       "legend": "<\n,",
-      "keyCode": "<\n,"
+      "keyCode": "Comma"
     },
     {
       "legend": ">\n.",
-      "keyCode": ">\n."
+      "keyCode": "Period"
     },
     {
       "legend": "?\n/",
-      "keyCode": "?\n/"
+      "keyCode": "Slash"
     },
     {
       "w": 2.75,
@@ -392,7 +392,7 @@
     },
     {
       "legend": "↑",
-      "keyCode": "↑"
+      "keyCode": "ArrowUp"
     },
     {
       "x": 1.25
@@ -439,7 +439,7 @@
     {
       "w": 1.25,
       "legend": "Alt",
-      "keyCode": "Alt"
+      "keyCode": "AltRight"
     },
     {
       "w": 1.25,
