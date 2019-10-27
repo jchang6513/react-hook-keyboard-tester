@@ -24,15 +24,21 @@ const Keyboard = (props: KeyboardProps) => {
     keyPressing,
     pressedKeys
   } = props;
+
   const keyMap: KeyMap = ansi104;
-  const unit = '60px';
-  const unitWidth = (value: number) => `calc(${value} * ${unit})`;
+  const unit = 60;
+  const unitWidth = (value: number) => `${value*unit}px`;
 
   let maxKeyWidth = 0;
   let currentRowWidth = 0;
 
   useEffect(() => {
-    (document.getElementById('keyboard') as any).style.width = `calc(${maxKeyWidth} * ${unit})`
+    const keyboardWidth = maxKeyWidth*unit;
+    const windowWidth = window.innerWidth;
+    const keyBoardStyle = (document.getElementById('keyboard') as any).style;
+    keyBoardStyle.width = `${keyboardWidth}px`;
+    keyBoardStyle.transform = `scale(${windowWidth / (keyboardWidth + 100)})`;
+    keyBoardStyle.marginLeft = `${(windowWidth - keyboardWidth - 50) / 2}px`;
   }, [maxKeyWidth]);
 
   return (
