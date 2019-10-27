@@ -60,7 +60,7 @@ const Keyboard = (props: KeyboardProps) => {
                     currentRowWidth += keyWidth;
                     return (
                       <div
-                        className={`key ${keyCode} ${pressedKeys.includes(keyCode) && 'pressed'} ${keyPressing === keyCode && 'pressing'}`}
+                        className={`key ${keyCode}${pressedKeys.includes(keyCode) ? ' pressed' : ''}${keyPressing === keyCode ? ' pressing' : ''}`}
                         style={{
                           height: unitWidth(keyHeight),
                           width: unitWidth(keyWidth)

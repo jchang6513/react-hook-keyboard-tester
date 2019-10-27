@@ -1,43 +1,32 @@
 #keyboard {
-  background-color: #e3e3e3;
+  background-color: #ececec;
   border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  padding-top: 50px;
-
   .row {
     .key {
-      overflow: hidden;
-      position: relative;
-
       .keyCap {
-        background-color: #f8f8f8;
-        border: 1px solid gray;
-        border-radius: 5px;
-        // box-shadow: 0 2px 2px #c3c3c3, 0 2px 2px #c9c9c9, 0 2px 3px #333;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        content: '';
-        height: calc(100% - 16px);
-        padding-top: 4px;
-        position: absolute;
-        width: calc(100% - 12px);
+        background: #fdfdfd;
+        border-color: #f3f3f3 #f3f3f3 #eeeeea;
+        border-width: 3px 7px 10px;
+        border-style: solid;
+        border-radius: 3px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+        height: calc(100% - 17px);
+        margin: 2px;
         p {
           font-size: 14px;
           margin: 0px;
         }
       }
-
-      &.pressed {
+      &.pressed, &.pressing {
         .keyCap {
-          background-color: rgb(172, 172, 172);
+          background: #ededed;
+          border-color: #e7e7e7 #e7e7e7 #b9b4b4;
         }
       }
-
-      &.pressing {
-        .keyCap {
-          box-shadow: none;
-          background-color: rgb(172, 172, 172);
-          transform: scale(0.99);
-        }
+      &.pressing .keyCap {
+        transform: scale(0.95);
       }
     }
   }
