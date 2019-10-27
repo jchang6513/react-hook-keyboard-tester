@@ -9,10 +9,19 @@ body {
   }
   h2 {
     span {
-      background: black;
-      color: white;
+      border-bottom: 2px solid black;
       margin-left: 5px;
-      padding: 0px 10px;
+      padding: 0px 5px;
+      animation: 1s blink step-end infinite;
     }
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-bottom: none;
+  }
+  50% {
+    border-bottom: 2px solid black;
   }
 }
