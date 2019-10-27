@@ -25,11 +25,11 @@
       }
       &.pressed, &.pressing {
         .keyCap {
-          background: #ededed;
-          border-color: #e7e7e7 #e7e7e7 #b9b4b4;
+          background: linear-gradient(to right, #afafaf, #bbbbbb, #afafaf);
+          border-color: #afafaf #afafaf #8a8a8a;
           &.blue {
-            background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
-            border-color: #c4c7cc #adb9cc #96a6bd;
+            background: linear-gradient(to right, #6f7580, #818894, #6f7580);
+            border-color: #6f7580 #6f7580 #575c66;
           }
         }
       }
