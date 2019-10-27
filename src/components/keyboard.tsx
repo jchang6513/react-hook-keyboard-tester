@@ -10,6 +10,7 @@ type TKey = {
   y?: number;
   legend?: string;
   keyCode?: string;
+  className?: string;
 };
 type KeyRow = TKey[];
 type KeyMap = KeyRow[];
@@ -47,7 +48,7 @@ const Keyboard = (props: KeyboardProps) => {
               {
                 row.map(key => {
                   const {
-                    w, h, x, legend, keyCode
+                    w, h, x, legend, keyCode, className
                   } = key;
                   const keyWidth = w || 1;
                   const keyHeight = h || 1;
@@ -66,7 +67,7 @@ const Keyboard = (props: KeyboardProps) => {
                           width: unitWidth(keyWidth)
                         }}
                       >
-                        <div className="keyCap">
+                        <div className={`keyCap ${className ? className : ''}`}>
                           { legend.split('\n').map(k => <p>{k}<br/></p>) }
                         </div>
                       </div>

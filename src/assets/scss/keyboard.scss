@@ -6,7 +6,7 @@
   .row {
     .key {
       .keyCap {
-        background: #fdfdfd;
+        background: linear-gradient(to right, #f3f3f3, #fff, #f3f3f3);
         border-color: #f3f3f3 #f3f3f3 #eeeeea;
         border-width: 3px 7px 10px;
         border-style: solid;
@@ -18,11 +18,19 @@
           font-size: 14px;
           margin: 0px;
         }
+        &.blue {
+          background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
+          border-color: #c4c7cc #adb9cc #96a6bd;
+        }
       }
       &.pressed, &.pressing {
         .keyCap {
           background: #ededed;
           border-color: #e7e7e7 #e7e7e7 #b9b4b4;
+          &.blue {
+            background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
+            border-color: #c4c7cc #adb9cc #96a6bd;
+          }
         }
       }
       &.pressing .keyCap {

@@ -80,7 +80,8 @@
   [
     {
       "legend": "~\n`",
-      "keyCode": "Backquote"
+      "keyCode": "Backquote",
+      "className": "blue"
     },
     {
       "legend": "!\n1",
@@ -133,7 +134,8 @@
     {
       "w": 2,
       "legend": "Backspace",
-      "keyCode": "Backspace"
+      "keyCode": "Backspace",
+      "className": "blue"
     },
     {
       "x": 0.25
@@ -174,7 +176,8 @@
     {
       "w": 1.5,
       "legend": "Tab",
-      "keyCode": "Tab"
+      "keyCode": "Tab",
+      "className": "blue"
     },
     {
       "legend": "Q",
@@ -227,7 +230,8 @@
     {
       "w": 1.5,
       "legend": "|\n\\",
-      "keyCode": "Backslash"
+      "keyCode": "Backslash",
+      "className": "blue"
     },
     {
       "x": 0.25
@@ -269,7 +273,8 @@
     {
       "w": 1.75,
       "legend": "Caps Lock",
-      "keyCode": "CapsLock"
+      "keyCode": "CapsLock",
+      "className": "blue"
     },
     {
       "legend": "A",
@@ -318,7 +323,8 @@
     {
       "w": 2.25,
       "legend": "Enter",
-      "keyCode": "Enter"
+      "keyCode": "Enter",
+      "className": "blue"
     },
     {
       "x": 3.5
@@ -340,7 +346,8 @@
     {
       "w": 2.25,
       "legend": "Shift",
-      "keyCode": "ShiftLeft"
+      "keyCode": "ShiftLeft",
+      "className": "blue"
     },
     {
       "legend": "Z",
@@ -385,7 +392,8 @@
     {
       "w": 2.75,
       "legend": "Shift",
-      "keyCode": "ShiftRight"
+      "keyCode": "ShiftRight",
+      "className": "blue"
     },
     {
       "x": 1.25
@@ -419,17 +427,20 @@
     {
       "w": 1.25,
       "legend": "Ctrl",
-      "keyCode": "ControlLeft"
+      "keyCode": "ControlLeft",
+      "className": "blue"
     },
     {
       "w": 1.25,
       "legend": "Win",
-      "keyCode": "MetaLeft"
+      "keyCode": "MetaLeft",
+      "className": "blue"
     },
     {
       "w": 1.25,
       "legend": "Alt",
-      "keyCode": "AltLeft"
+      "keyCode": "AltLeft",
+      "className": "blue"
     },
     {
       "w": 6.25,
@@ -439,22 +450,26 @@
     {
       "w": 1.25,
       "legend": "Alt",
-      "keyCode": "AltRight"
+      "keyCode": "AltRight",
+      "className": "blue"
     },
     {
       "w": 1.25,
       "legend": "Win",
-      "keyCode": "MetaRight"
+      "keyCode": "MetaRight",
+      "className": "blue"
     },
     {
       "w": 1.25,
       "legend": "Menu",
-      "keyCode": "MenuRight"
+      "keyCode": "MenuRight",
+      "className": "blue"
     },
     {
       "w": 1.25,
       "legend": "Ctrl",
-      "keyCode": "ControlRight"
+      "keyCode": "ControlRight",
+      "className": "blue"
     },
     {
       "x": 0.25
