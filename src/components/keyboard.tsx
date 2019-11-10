@@ -32,14 +32,19 @@ const Keyboard = (props: KeyboardProps) => {
   let maxKeyWidth = 0;
   let currentRowWidth = 0;
 
-  useEffect(() => {
+  const onResize = () => {
     const keyboardWidth = maxKeyWidth*unit;
     const windowWidth = window.innerWidth;
     const keyBoardStyle = (document.getElementById('keyboard') as any).style;
     keyBoardStyle.width = `${keyboardWidth}px`;
     keyBoardStyle.transform = `scale(${windowWidth / (keyboardWidth + 100)})`;
     keyBoardStyle.marginLeft = `${(windowWidth - keyboardWidth - 50) / 2}px`;
-  }, [maxKeyWidth]);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', onResize);
+    return () => window.addEventListener('resize', onResize);
+  }, [])
 
   return (
     <div id="keyboard">
