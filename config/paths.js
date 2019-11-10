@@ -82,7 +82,8 @@ module.exports = {
   proxySetup: resolveApp('src/setupProxy.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  servedPath: './keyboard-tester/', //getServedPath(resolveApp('package.json')),
+  htmlPath: '../keyboard-tester.html'
 };
 
 
